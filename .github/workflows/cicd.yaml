@@ -16,15 +16,15 @@ env:
 
 jobs:
   build:
-  name: Build and Publish
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v2
+    name: Build and Publis
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
 
-  -name: Use Node ${{ env.NODE_VERSION }}
-   uses: actions/setup-node@v1
-   with:
-      node-version: ${{ env.NODE_VERSION }}
+    - name: Use Node ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
 
 - name: Build project
   continue-on-error: false
